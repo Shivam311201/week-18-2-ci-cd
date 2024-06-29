@@ -18,7 +18,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: ./Dockerfile
+          file: ./docker/Dockerfile.user
           push: true
           tags: shivamgarg31/week-18-class:latest # Replace with your Docker Hub username and repository
       - name: Verify Pushed Image
